@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="20dp"
+    app:contentScrim="@color/background_nav_color"
+    tools:context=".ui.home.UpdateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:contentScrim="@color/background_nav_color"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/background_nav_color">
+
+            <ImageView
+                android:id="@+id/image_view_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"
+                app:tint="@color/title_text_color" />
+
+            <com_pizly.java_pizly.pizly.animation.TypeTextWriterTextView
+                android:id="@+id/text_view_title_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/concert_font"
+                android:text="Edit Profile"
+                android:textColor="@color/title_text_color"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/image_view_changing_password"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_lock"
+                app:tint="@color/title_text_color" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentScrim="@color/background_nav_color"
+        android:fillViewport="true"
+        android:animateLayoutChanges="true"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_view_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:transitionName="user_image"
+                android:layout_marginVertical="20dp"
+                android:src="@drawable/img_random_person"
+                app:civ_border_color="@color/toxic_green"
+                app:civ_border_overlay="true"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/nunito_font"
+                android:layout_gravity="center_horizontal"
+                android:text="Select an image"/>
+
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_font"
+                android:hint="Name"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:textColor="@color/title_text_color"
+                android:theme="@style/Theme.EditTextColors"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_font"
+                android:hint="Email"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:textColor="@color/title_text_color"
+                android:theme="@style/Theme.EditTextColors"
+                android:inputType="textEmailAddress" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                >
+
+                <com.fredporciuncula.phonemoji.PhonemojiFlagTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    app:phonemoji_flagFor="@id/edit_text_phone_no"
+                    />
+
+                <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
+                    android:id="@+id/edit_text_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:phonemoji_initialRegionCode="CA"
+                    android:fontFamily="@font/nunito_font"
+                    android:textColor="@color/title_text_color"
+                    android:theme="@style/Theme.EditTextColors"
+                    android:hint="Phone no."
+                    android:digits="0123456789+"
+                    android:inputType="number"
+                    />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edit_text_hobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_font"
+                android:theme="@style/Theme.EditTextColors"
+                android:hint="Hobby"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:textColor="@color/title_text_color"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/edit_text_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_font"
+                android:gravity="top"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:theme="@style/Theme.EditTextColors"
+                android:hint="Quick Description"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxLength="150"
+                android:textColor="@color/title_text_color" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_update"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Update"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:textAllCaps="false"
+                android:fontFamily="@font/nunito_font"
+                android:textColor="@color/background_nav_color"
+                android:backgroundTint="@color/title_text_color"
+                app:cornerRadius="14dp" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

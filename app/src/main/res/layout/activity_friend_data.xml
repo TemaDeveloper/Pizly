@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/image_view_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/title_text_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/image_view_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:transitionName="friend_image"
+                android:src="@drawable/ic_account" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com_pizly.java_pizly.pizly.animation.TypeTextWriterTextView
+            android:id="@+id/text_view_name_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/concert_font"
+            android:gravity="center"
+            android:text="Name"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/title_text_color"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/text_view_hobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/nunito_font"
+            android:gravity="center"
+            android:text="Hobby"
+            android:textColor="@color/title_text_color"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/nunito_font"
+            android:gravity="center"
+            android:text="Description"
+            android:textColor="@color/title_text_color"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_ban_friend"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/nunito_font"
+                android:text="Block"
+                app:iconTint="@color/white"
+                app:icon="@drawable/ic_block"
+                app:iconGravity="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                app:cornerRadius="14dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_freeze_friend"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:icon="@drawable/img_snowflake"
+                app:iconGravity="textStart"
+                app:iconSize="24dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                app:iconTint="@color/white"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/nunito_font"
+                android:text="Freeze"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                app:cornerRadius="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

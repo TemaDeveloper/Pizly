@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_nav_color"
+    tools:context=".ui.activeTckets.ActiveTicketsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/background_nav_color"
+            app:tabIndicator="@drawable/tab_background"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="@color/title_text_color"
+            app:tabIndicatorGravity="stretch"
+            app:tabSelectedTextColor="@color/background_nav_color" />
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:background="@color/background_nav_color" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

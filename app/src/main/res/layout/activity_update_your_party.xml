@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.yourParties.UpdateYourPartyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/image_view_spot"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:transitionName="party_image"
+                android:src="@drawable/img_random_person" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/effect_dark" />
+
+            <TextView
+                android:id="@+id/text_view_change_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/border_text"
+                android:fontFamily="@font/nunito_font"
+                android:padding="10dp"
+                android:text="Change Image"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_collapseMode="parallax" />
+
+            <ImageView
+                android:id="@+id/image_view_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/edit_text_party_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_font"
+                android:hint="Name"
+                android:inputType="text"
+                android:text="Title"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:textColor="@color/title_text_color"
+                android:theme="@style/Theme.EditTextColors" />
+
+
+            <EditText
+                android:id="@+id/edit_text_rules"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_font"
+                android:gravity="top"
+                android:hint="Rules"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxLength="150"
+                android:text="Rules"
+                android:textColor="@color/title_text_color"
+                android:theme="@style/Theme.EditTextColors" />
+
+
+            <EditText
+                android:id="@+id/edit_text_additional_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_font"
+                android:gravity="top"
+                android:hint="Additional Info"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxLength="150"
+                android:text="Additional Info"
+                android:textColor="@color/title_text_color"
+                android:theme="@style/Theme.EditTextColors" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_update_party"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:backgroundTint="@color/title_text_color"
+                android:fontFamily="@font/nunito_font"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/background_nav_color"
+                app:cornerRadius="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

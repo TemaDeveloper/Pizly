@@ -1,0 +1,34 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    //repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = "mapbox"
+                password = "pk.eyJ1IjoiZmVzaGFydDUwMCIsImEiOiJjbGdpYnRjdzEwdHJzM21ueXBnampjbGg2In0.I9rQYPG2OwSf5lzmKa3gMw"
+            }
+        }
+        maven {
+            name 'hypertrack'
+            url 'https://s3-us-west-2.amazonaws.com/m2.hypertrack.com/'
+        }
+
+    }
+}
+rootProject.name = "Pizly"
+include ':app'

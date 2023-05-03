@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_nav_color"
+    tools:context=".ui.map.MapFragment">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_view"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back_to_camera_tracking_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/toxic_green"
+        app:borderWidth="0dp"
+        app:srcCompat="@drawable/ic_pin"
+        app:fabSize="normal" />
+
+    <!--https://databases.000webhost.com/sql.php?server=1&db=id20486127_we_app&table=users_table&pos=0
+    https://www.000webhost.com/members/website/wetorontohomelessness/files
+    https://files.000webhost.com
+    https://dashboard.hypertrack.com/home
+    https://braemarcollege.instructure.com/courses/524/modules-->
+
+</RelativeLayout>

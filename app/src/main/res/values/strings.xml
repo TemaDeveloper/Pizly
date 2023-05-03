@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Pizly</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_history">History</string>
+    <string name="title_search">Search</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZmVzaGFydDUwMCIsImEiOiJjbGdpYnRjdzEwdHJzM21ueXBnampjbGg2In0.I9rQYPG2OwSf5lzmKa3gMw</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+</resources>

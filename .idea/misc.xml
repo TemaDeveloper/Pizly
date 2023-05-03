@@ -1,0 +1,70 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1685185185185185" />
+        <entry key="app/src/main/res/drawable-v24/background_view_hide_bottom_sheet.xml" value="0.2955" />
+        <entry key="app/src/main/res/drawable-v24/effect_dark.xml" value="0.186" />
+        <entry key="app/src/main/res/drawable-v24/gradient_background_signup_2.xml" value="0.151" />
+        <entry key="app/src/main/res/drawable-v24/gradient_background_signup_3.xml" value="0.151" />
+        <entry key="app/src/main/res/drawable/animation_expand_collapse.xml" value="0.3015" />
+        <entry key="app/src/main/res/drawable/border_qr_code.xml" value="0.245" />
+        <entry key="app/src/main/res/drawable/border_text.xml" value="0.2565" />
+        <entry key="app/src/main/res/drawable/circle_black_border.xml" value="0.208" />
+        <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/gradient_background_signup_1.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/gradient_background_signup_2.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/ic_pin.xml" value="0.2565" />
+        <entry key="app/src/main/res/drawable/rectengle_border.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/rounded_dialog.xml" value="0.1935" />
+        <entry key="app/src/main/res/drawable/tab_background.xml" value="0.151" />
+        <entry key="app/src/main/res/drawable/text_input_box_stroke.xml" value="0.1935" />
+        <entry key="app/src/main/res/layout/activity_addition.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_addition_friend.xml" value="0.20640844181054357" />
+        <entry key="app/src/main/res/layout/activity_addtition.xml" value="0.5932291666666667" />
+        <entry key="app/src/main/res/layout/activity_friend_addition.xml" value="0.5932291666666667" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2142410278320312" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.29887644449869794" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_signup_login.xml" value="0.23098297119140637" />
+        <entry key="app/src/main/res/layout/activity_ticket_data.xml" value="0.21905822753906243" />
+        <entry key="app/src/main/res/layout/activity_update.xml" value="0.19270782470703118" />
+        <entry key="app/src/main/res/layout/fragment_active.xml" value="0.2540064797472599" />
+        <entry key="app/src/main/res/layout/fragment_active_history.xml" value="0.465625" />
+        <entry key="app/src/main/res/layout/fragment_all_tickets.xml" value="0.5932291666666667" />
+        <entry key="app/src/main/res/layout/fragment_event_addition_slide1.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_event_addition_slide2.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_event_addition_slide3.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_event_price_addition_slide4.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2375396728515625" />
+        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_previous_history.xml" value="0.5932291666666667" />
+        <entry key="app/src/main/res/layout/fragment_profile_2.xml" value="0.3048263549804686" />
+        <entry key="app/src/main/res/layout/fragment_q_r_code_bottom_sheet.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.23209279378255204" />
+        <entry key="app/src/main/res/layout/fragment_sign_uo_first_slide.xml" value="0.4296875" />
+        <entry key="app/src/main/res/layout/fragment_sign_up_first_slide.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_sign_up_second_slide.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_sign_up_third_slide.xml" value="0.18543701171875" />
+        <entry key="app/src/main/res/layout/fragment_your_parties.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/item_history.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_past_ticket.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_person.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_pop_spot.xml" value="0.19221282958984376" />
+        <entry key="app/src/main/res/layout/item_ticket.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item_your_party_ticket.xml" value="0.55" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.335" />
+        <entry key="app/src/main/res/xml/attrs.xml" value="0.4296875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

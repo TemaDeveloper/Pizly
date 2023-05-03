@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "303382356436",
+    "project_id": "pizly-b6cbf",
+    "storage_bucket": "pizly-b6cbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303382356436:android:1e43d4259995a00a13f641",
+        "android_client_info": {
+          "package_name": "com_pizly.java_pizly.pizly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303382356436-p7a1mbob1c8ndoarj972nd37kn1dhl3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfs3E7-8rH-NC4dGqEbYa_Hu6owBb_Dmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303382356436-p7a1mbob1c8ndoarj972nd37kn1dhl3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

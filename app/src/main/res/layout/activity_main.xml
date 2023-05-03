@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_nav_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com_pizly.java_pizly.pizly.animation.TypeTextWriterTextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/concert_font"
+                android:textColor="@color/title_text_color"
+                android:textSize="24sp" />
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/image_view_qr_code"
+                android:theme="@style/AppSearchView" />
+
+            <ImageView
+                android:id="@+id/image_view_qr_code"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toLeftOf="@+id/image_view_settings"
+                android:src="@drawable/img_qr_code"
+                android:visibility="gone"
+                app:tint="@color/title_text_color" />
+
+            <ImageView
+                android:id="@+id/image_view_settings"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/img_menu"
+                app:tint="@color/title_text_color" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="com_pizly.java_pizly.pizly.ui.home.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_weight="1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/background_nav_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/liner_layout_app_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:elevation="8dp"
+            app:cardCornerRadius="40dp">
+
+            <me.ibrahimsn.lib.SmoothBottomBar
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:elevation="8dp"
+                android:fadingEdgeLength="5dp"
+                android:textDirection="firstStrong"
+                app:backgroundColor="@color/background_nav_color"
+                app:iconSize="18dp"
+                app:iconTint="@color/gray"
+                app:iconTintActive="@color/black"
+                app:indicatorColor="@color/toxic_green"
+                app:indicatorRadius="30dp"
+                app:itemPadding="12dp"
+                app:menu="@menu/bottom_nav_menu"
+                app:sideMargins="5dp"
+                app:textColor="@color/black"
+                app:textSize="14sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

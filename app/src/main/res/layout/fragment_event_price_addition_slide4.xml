@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background_nav_color"
+    tools:context=".ui.eventAddition.EventAdditionSlide2Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_layout_fields"
+            android:layout_alignLeft="@+id/linear_layout_fields"
+            android:layout_alignRight="@+id/linear_layout_fields"
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="10dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:orientation="horizontal">
+
+            <com_pizly.java_pizly.pizly.animation.TypeTextWriterTextView
+                android:id="@+id/text_view_title_step_4_addition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/concert_font"
+                android:gravity="center"
+                android:text="Pricing"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text_color"
+                android:textSize="24sp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="30dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_font"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:text="The price is indicated for your future visitors for a ticket to your events, if desired, you can set a price of $0. When choosing a price of $0, we add $2 for our services. When choosing a price of more than $1, 10% of the service cost will be delivered to the final prime:"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal">
+
+                <TableRow
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_view_ten_dollars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="14dp"
+                        android:elevation="8dp"
+                        app:cardElevation="8dp"
+                        android:layout_margin="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="30dp"
+                                android:layout_height="30dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/circleImageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/blue" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/text_view_ten_dollars"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text ="20.0 EU"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/title_text_color"
+                                android:textSize="16sp"
+                                />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_view_twenty_five_dollars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="14dp"
+                        android:elevation="8dp"
+                        app:cardElevation="8dp"
+                        android:layout_marginVertical="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="30dp"
+                                android:layout_height="30dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/blue" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/text_view_twenty_five_dollars"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text ="50.0 EU"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/title_text_color"
+                                android:textSize="16sp"
+                                />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_view_fifty_dollars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="14dp"
+                        android:elevation="8dp"
+                        app:cardElevation="8dp"
+                        android:layout_margin="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="30dp"
+                                android:layout_height="30dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/blue" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/text_view_fifty_dollars"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text ="80.0 EU"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/title_text_color"
+                                android:textSize="16sp"
+                                />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/NormalTextInputLayoutStyle"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="20dp"
+                app:boxCornerRadiusBottomEnd="14dp"
+                app:boxCornerRadiusBottomStart="14dp"
+                app:boxCornerRadiusTopEnd="14dp"
+                app:boxCornerRadiusTopStart="14dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_font"
+                    android:gravity="top|left"
+                    android:hint="Amount"
+                    android:inputType="number"
+                    android:singleLine="false"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_finish_creating_event"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/linear_layout_fields"
+                android:layout_alignLeft="@+id/linear_layout_fields"
+                android:layout_alignRight="@+id/linear_layout_fields"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/title_text_color"
+                android:fontFamily="@font/nunito_font"
+                android:text="Done"
+                android:textAllCaps="false"
+                android:textColor="@color/background_nav_color"
+                android:textStyle="normal"
+                app:cornerRadius="14dp" />
+
+            <Button
+                android:id="@+id/button_previous_4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/button_finish_creating_event"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:elevation="5dp"
+                android:fontFamily="@font/nunito_font"
+                android:text="Previous"
+                android:textAllCaps="false"
+                android:textColor="@color/title_text_color"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_previous_4"
+                android:layout_alignLeft="@+id/linear_layout_fields"
+                android:layout_alignRight="@+id/linear_layout_fields"
+                android:fontFamily="@font/nunito_font"
+                android:gravity="center"
+                android:text="4/4"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
